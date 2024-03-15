@@ -15,11 +15,10 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("plugins")
+require("lazy").setup("plugins", {{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"}})
+
 vim.cmd.colorscheme "everforest"
 
 vim.keymap.set('n', '<C-n>', '<Cmd>Neotree toggle<CR>')
-
-require("lazy").setup({{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"}})
 
 require("mason").setup()
