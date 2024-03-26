@@ -1,4 +1,4 @@
-vim.cmd("set expandtab shiftwidth=4 tabstop=4 softtabstop=4 nu")
+vim.cmd("set expandtab shiftwidth=4 tabstop=4 softtabstop=4 nu rnu")
 vim.g.mapleader = " "
 vim.keymap.set("n", ";", ":")
 vim.cmd("nnoremap <leader>z :noh<cr>")
@@ -18,4 +18,4 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
 
-vim.cmd.colorscheme("everforest")
+vim.cmd.colorscheme("catppuccin")
