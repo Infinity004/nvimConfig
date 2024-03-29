@@ -1,7 +1,8 @@
-vim.cmd("set expandtab shiftwidth=4 tabstop=4 softtabstop=4 nu rnu")
+vim.cmd("set expandtab shiftwidth=4 tabstop=4 softtabstop=4 autochdir nu rnu")
 vim.g.mapleader = " "
 vim.keymap.set("n", ";", ":")
 vim.cmd("nnoremap <leader>z :noh<cr>")
+
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
