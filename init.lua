@@ -1,4 +1,4 @@
-vim.cmd("set expandtab shiftwidth=4 tabstop=4 softtabstop=4 autochdir nu rnu")
+vim.cmd("set expandtab shiftwidth=4 tabstop=4 softtabstop=4 scrolloff=4 autochdir nu rnu")
 vim.g.mapleader = " "
 vim.keymap.set("n", ";", ":")
 vim.cmd("nnoremap <leader>z :noh<cr>")
