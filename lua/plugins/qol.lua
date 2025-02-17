@@ -39,6 +39,7 @@ return {
 							key = "f",
 						},
 					},
+                    footer = {'Ignorance is bliss'},
 				},
 			})
 		end,
